@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "author_name": "Rembrandt Reyes",
+    "blog_title": "How does React.useState work?",
+    "cover_img": "https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "author_img": "https://images.unsplash.com/profile-1501788639330-641bf3c828b3?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
+    "read_time": "20 min read",
+    "publish_date": "22 Aug 2020",
+    "hash_tag": "#react #beginners"
+  },
+  {
+    "id": 2,
+    "author_name": "Mehul Mohan",
+    "blog_title": "How React works under the hood?",
+    "cover_img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    "author_img": "https://images.unsplash.com/profile-1632953003079-a7fb1c0022ccimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
+    "read_time": "15 min read",
+    "publish_date": "5 Sep 2019",
+    "hash_tag": "#react #tutorial"
+  },
+  {
+    "id": 3,
+    "author_name": "Uday Hiwarale",
+    "blog_title": "How does JavaScript engine work in browser?",
+    "cover_img": "https://images.unsplash.com/photo-1579820010410-c10411aaaa88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=897&q=80",
+    "author_img": "https://images.unsplash.com/profile-1604611609711-280973d7d206image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
+    "read_time": "16 min read",
+    "publish_date": "23 Apr 2018",
+    "hash_tag": "#JavaScript #V8_engine"
+  },
+  {
+    "id": 4,
+    "author_name": "Jefferson Santos",
+    "blog_title": "How the event loop works in JavaScript?",
+    "cover_img": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "author_img": "https://images.unsplash.com/profile-1665073963799-fc820fddbb37image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
+    "read_time": "10 min read",
+    "publish_date": "15 July 2022",
+    "hash_tag": "#JavaScript #Event_loop"
+  }
+]
