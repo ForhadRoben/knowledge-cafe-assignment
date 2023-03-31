@@ -14,7 +14,7 @@ const Card = () => {
             <div className='col-span-2 bg-secondary'>
                 {cardItems.map(singleCard => <SingleCard
                     key={singleCard.id}
-                    a={singleCard}
+                    singleCard={singleCard}
                 ></SingleCard>)}
             </div>
             <div className='bg-primary'>this is sidebar</div>
