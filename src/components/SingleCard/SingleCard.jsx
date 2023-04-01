@@ -6,10 +6,11 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const SingleCard = (props) => {
     // console.log(props.singleCard);
     const { author_img, author_name, blog_title, cover_img, hash_tag, publish_date, read_time } = props.singleCard;
+    const handleReadTime = props.handleReadTime;
     const handleBookmark = props.handleBookmark;
     return (
         <div>
-            <div className="card glass mt-6">
+            <div className="card glass my-6">
                 <img className='img-size' src={cover_img} alt="img_loaded" />
                 <div className="card-body">
                     <div className='flex justify-between items-center'>
@@ -22,16 +23,14 @@ const SingleCard = (props) => {
                         </div>
                         <div className='flex items-center'>
                             <div>{read_time}</div>
-                            <FontAwesomeIcon className='ml-2' icon={faBookmark} />
+                            <button><FontAwesomeIcon className='ml-2' onClick={() => handleBookmark(props.singleCard)} icon={faBookmark} /></button>
                         </div>
                     </div>
                     <h2 className="card-title">{blog_title}</h2>
                     <p>{hash_tag}</p>
-                    <button className='font-bold text-primary border-b-2 border-error w-28' href='' onClick={() => handleBookmark(props.singleCard)} >Mark as Read</button>
+                    <button className='font-bold text-primary border-b-2 border-error w-28' href='' onClick={() => handleReadTime(props.singleCard)} >Mark as Read</button>
                     <hr />
-                    {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Learn now!</button>
-                    </div> */}
+
                 </div>
             </div>
         </div>
