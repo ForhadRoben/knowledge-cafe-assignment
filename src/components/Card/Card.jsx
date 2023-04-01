@@ -17,8 +17,6 @@ const Card = () => {
     }, [])
 
     const handleReadTime = (singleCard) => {
-
-        // cart.push(product); 
         const newReadTime = [...readTime, singleCard];
         setReadTime(newReadTime);
     }
@@ -36,7 +34,7 @@ const Card = () => {
     }
     return (
         <div className='grid grid-cols-3 gap-4'>
-            <div className='col-span-2 '>
+            <div className='col-span-3 md:col-span-2 '>
                 {cardItems.map(singleCard => <SingleCard
                     key={singleCard.id}
                     singleCard={singleCard}
@@ -44,7 +42,7 @@ const Card = () => {
                     handleBookmark={handleBookmark}
                 ></SingleCard>)}
             </div>
-            <div className='mt-6 mx-auto text-2xl font-bold'>
+            <div className='my-6 mx-auto text-2xl font-bold col-span-3 md:col-span-1 '>
                 <Sidebar readTime={readTime}
                     bookmark={bookmark}></Sidebar>
             </div>
