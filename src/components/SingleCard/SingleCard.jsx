@@ -1,13 +1,17 @@
 import React from 'react';
 import './SingleCard.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
 
 const SingleCard = (props) => {
     // console.log(props.singleCard);
     const { author_img, author_name, blog_title, cover_img, hash_tag, publish_date, read_time } = props.singleCard;
     const handleReadTime = props.handleReadTime;
     const handleBookmark = props.handleBookmark;
+
     return (
         <div>
             <div className="card glass my-6">
@@ -24,6 +28,7 @@ const SingleCard = (props) => {
                         <div className='flex items-center'>
                             <div>{read_time}</div>
                             <button><FontAwesomeIcon className='ml-2' onClick={() => handleBookmark(props.singleCard)} icon={faBookmark} /></button>
+
                         </div>
                     </div>
                     <h2 className="card-title">{blog_title}</h2>

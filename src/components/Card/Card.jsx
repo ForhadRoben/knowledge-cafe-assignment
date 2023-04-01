@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Card.css';
 import SingleCard from '../SingleCard/SingleCard';
 import Sidebar from '../Sidebar/Sidebar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Card = () => {
     const [cardItems, setCardItems] = useState([]);
@@ -15,14 +17,22 @@ const Card = () => {
     }, [])
 
     const handleReadTime = (singleCard) => {
+
         // cart.push(product); 
         const newReadTime = [...readTime, singleCard];
         setReadTime(newReadTime);
     }
 
     const handleBookmark = (singleCard) => {
+        // console.log(singleCard);
         const newBookmark = [...bookmark, singleCard];
-        setBookmark(newBookmark)
+        // console.log(newBookmark);
+        if (bookmark.find(pd => pd.id === singleCard.id)) {
+            toast("You Have Already Bookmarked This Blog")
+            // return setBookmark;
+        }
+        setBookmark(newBookmark);
+
     }
     return (
         <div className='grid grid-cols-3 gap-4'>
@@ -38,6 +48,7 @@ const Card = () => {
                 <Sidebar readTime={readTime}
                     bookmark={bookmark}></Sidebar>
             </div>
+            <ToastContainer />
         </div>
     );
 };
